@@ -1,0 +1,16 @@
+body{
+    background-image: radial-gradient( circle 311px at 8.6% 27.9%,  rgba(62,147,252,0.57) 12.9%, rgba(239,183,192,0.44) 91.2% );
+}
+
+
+.loader {
+    width: 120px;
+    height: 20px;
+    background: 
+      linear-gradient(90deg, #0000 ,orange) left -50px top 0/50px 20px no-repeat 
+      lightblue;
+    animation: l2 1s infinite linear;
+  }
+  @keyframes l2 {
+    100% {background-position: right -50px top 0}
+  }
