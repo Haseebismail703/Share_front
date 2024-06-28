@@ -52,11 +52,9 @@ function App() {
   let text = async () => {
     setloader(true)
     Post('https://sharebackend-production.up.railway.app/api/text', { text : tex ,ip : ip})
-    // console.log(tex, ip)
-    fun()
     settex('')
     setloader(false)
-    // console.log(tex)
+    fun()
   }
   
   let edittext = async () => {
