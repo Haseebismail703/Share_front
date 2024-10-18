@@ -9,7 +9,7 @@ function Rou() {
     <BrowserRouter>
     <Routes>
         <Route path="/" element={<App/>}/>
-        <Route path="/about" element={<Intro/>}/>
+        <Route path="/how_its_work" element={<Intro/>}/>
         <Route path="/upload" element={<Uploa/>}/>
         <Route path="*" element={<Found/>}/>
     </Routes>

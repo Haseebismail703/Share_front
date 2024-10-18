@@ -3,20 +3,28 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom';
 
+
 function Navi() {
   return (
-    <Navbar sticky="top" collapseOnSelect expand="lg" data-bs-theme="dark" className="bg-body-tertiary ">
+    <Navbar sticky="top" collapseOnSelect expand="lg" className="bg-dark navbar-dark">
       <Container>
-        <Navbar.Brand as={Link} to={'/'}>ShareForYou</Navbar.Brand>
+        <Navbar.Brand as={Link} to={'/'} className="fw-bold text-uppercase text-primary">
+          ShareForYou
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link as={Link} to={'/about'} >How its work</Nav.Link>
+          <Nav className="ms-auto">
+            <Nav.Link as={Link} to={'/how_its_work'} className="nav-link-custom">
+              How it works
+            </Nav.Link>
+            <Nav.Link as={Link} to={'/'} className="nav-link-custom">
+             Start sharing
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
-  )
+  );
 }
 
 export default Navi;

@@ -5,7 +5,7 @@ function Found() {
   return (
     <div>
       
-      Found
+     page not Found
       </div>
   )
 }
