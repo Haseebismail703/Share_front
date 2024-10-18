@@ -9,7 +9,7 @@ function Navi() {
     <Navbar sticky="top" collapseOnSelect expand="lg" className="bg-dark navbar-dark">
       <Container>
         <Navbar.Brand as={Link} to={'/'} className="fw-bold text-uppercase text-primary">
-          ShareForYou
+          Share For You
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
